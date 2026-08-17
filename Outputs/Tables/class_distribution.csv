@@ -1,0 +1,5 @@
+source_split,class_name,n
+test_source,Normal,234
+test_source,Pneumonia,390
+train_source,Normal,1377
+train_source,Pneumonia,3901

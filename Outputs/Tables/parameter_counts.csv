@@ -1,0 +1,4 @@
+model,trainable_parameters
+direct_small_cnn,94083
+direct_resnet18,11178051
+direct_efficientnet_b0,4011391
