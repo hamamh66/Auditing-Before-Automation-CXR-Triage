@@ -53,9 +53,21 @@ The paired bootstrap interval for the hierarchical-minus-direct macro-F1 differe
 
 ```text
 .
-├── Auditing_Before_Automation_CXR_Triage.ipynb
+├── Auditing_Before_Automation_CXR_Triage.ipynb   # complete executable workflow
+├── requirements.txt                              # dependencies for a local environment
+├── Outputs/                                      # figures and tables from an earlier
+│   ├── Figures/                                  #   exploratory run (see the note below)
+│   └── Tables/
+├── LICENSE
 └── README.md
 ```
+
+> **Note on `Outputs/`.** The files under `Outputs/` come from an earlier
+> exploratory run — a two-class (normal / pneumonia) model comparison including
+> ResNet-18 and EfficientNet-B0 baselines — and do **not** correspond to the
+> three-class case study reported in the manuscript. They are kept for
+> provenance only. To obtain the reported evidence, run the notebook; it writes
+> its own output tree, described below.
 
 The notebook is self-contained and automatically creates the following output structure:
 
@@ -73,6 +85,21 @@ At completion, these outputs are compressed as:
 ```text
 /content/Auditing_Before_Automation_CXR_Triage_results.zip
 ```
+
+## Local execution
+
+Python 3.10 or newer is recommended.
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+jupyter lab Auditing_Before_Automation_CXR_Triage.ipynb
+```
+
+A CUDA device is recommended for the feature-extraction pass; the audit stages
+run on CPU.
 
 ## Quick start in Google Colab
 
