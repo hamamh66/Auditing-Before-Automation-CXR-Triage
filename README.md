@@ -39,7 +39,7 @@ The R1 notebook integrates:
 
 ## Principal findings
 
-Results of notebook version R1-1.1 (one execution on a Google Colab Tesla T4 runtime; every value is traceable to a table under `results/R1-1.1/tables/`):
+Results of notebook version R1-1.1 (one execution on a Google Colab Tesla T4 runtime; every value is traceable to a table under `results/R1-1.1/tables/`). The complete results archive of that run, including all figures, per-image audit tables, bootstrap samples, test predictions, thresholds, and serialized models, is attached to the [v1.1 release](https://github.com/hamamh66/Auditing-Before-Automation-CXR-Triage/releases/tag/v1.1) as `Auditing_Before_Automation_CXR_Triage_R1_results.zip`:
 
 | Finding | Result |
 |---|---:|
@@ -68,9 +68,7 @@ The paired bootstrap interval for the hierarchical-minus-direct macro-F1 differe
 ├── requirements.txt                                 # dependencies for a local environment
 ├── results/
 │   └── R1-1.1/                                      # outputs of the reported R1-1.1 run
-│       ├── Auditing_Before_Automation_CXR_Triage_R1_results.zip   # complete results archive
-│       ├── tables/                                  # all CSV tables (bootstrap samples and per-image audits omitted; see the archive)
-│       ├── figures/                                 # all generated figures
+│       ├── tables/                                  # CSV tables (split assignments, per-image audits, bootstrap samples and test predictions are in the release archive)
 │       ├── run_manifest.json                        # library versions, device, full configuration
 │       └── outputs_summary.txt                      # run summary
 ├── Outputs/                                         # figures and tables from an earlier
