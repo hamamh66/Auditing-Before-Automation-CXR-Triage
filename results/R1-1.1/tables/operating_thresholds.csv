@@ -1,0 +1,2 @@
+abnormal_threshold,tb_threshold,entropy_threshold,entropy_quantile,conformal_q_Normal,conformal_q_Pneumonia,conformal_q_Tuberculosis
+0.6639031710714047,0.9969096477692548,0.016382236539403877,0.75,0.13708262169647212,0.010458768827637743,0.04144704062720683

@@ -1,0 +1,2 @@
+marginal_coverage,mean_set_size,singleton_rate,empty_rate,n_empty,n_multi,Normal_coverage,Pneumonia_coverage,Tuberculosis_coverage
+0.915041782729805,0.9185236768802229,0.9185236768802229,0.08147632311977716,117,0,0.9198813056379822,0.9125560538116592,0.9142419601837672

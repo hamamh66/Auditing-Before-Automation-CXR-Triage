@@ -1,0 +1,5 @@
+model,validation_macro_f1
+Logistic_C0.1,0.9843999861017546
+Logistic_C1.0,0.9853881129541548
+Logistic_C10.0,0.9810230678081902
+ExtraTrees,0.9624654248274996

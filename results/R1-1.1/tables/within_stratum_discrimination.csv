@@ -1,0 +1,2 @@
+resolution,n_test_used,classes,majority_baseline_accuracy,direct_accuracy,direct_macro_f1,hierarchical_accuracy,hierarchical_macro_f1,stats_only_accuracy,stats_only_macro_f1,stats_only_n_train
+1024x1024,354,Normal|Tuberculosis,0.9519774011299436,0.9830508474576272,0.9205089820359281,0.9745762711864406,0.8979949874686717,0.9576271186440678,0.8290790871342582,2503

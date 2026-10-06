@@ -1,0 +1,3 @@
+model,matched_accepted_n,errors,accepted_accuracy,accepted_accuracy_exact_lower95,max_zero_error_coverage
+direct,1083,0,1.0,0.9965996268602481,0.8906685236768802
+hierarchical,1083,0,1.0,0.9965996268602481,0.908774373259053

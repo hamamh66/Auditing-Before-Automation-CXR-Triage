@@ -1,0 +1,16 @@
+{
+  "files": 662,
+  "readable": 662,
+  "unique_sha256": 662,
+  "exact_conflict_identities": 0,
+  "perceptual_components_r4": 636,
+  "cross_label_perceptual_components": 6,
+  "class_counts": {
+    "Tuberculosis": 336,
+    "Normal": 326
+  },
+  "n_resolution_strata": 525,
+  "cramers_v_class_resolution": 0.9555239507741363,
+  "excluded_for_label_conflict": 14,
+  "retained_after_audit": 648
+}
