@@ -1,0 +1,60 @@
+AUDITING BEFORE AUTOMATION — RUN COMPLETE
+Dataset root: /content/kaggle_data
+Clean images: 14,281
+Selected direct model: Logistic_C1.0
+
+         model  accuracy  balanced_accuracy  macro_f1  macro_f1_ci_low  macro_f1_ci_high  macro_auc_ovr
+        direct   0.98677            0.98696   0.98592          0.97957           0.99177        0.99946
+  hierarchical   0.98677            0.98576   0.98553          0.97855           0.99163        0.99940
+  metadata_all   0.98259            0.98629   0.98113          0.97361           0.98791        0.99672
+ metadata_dims   0.98120            0.98480   0.97946          0.97160           0.98645        0.99255
+metadata_stats   0.57799            0.59751   0.57647          0.55059           0.60192        0.75290
+
+Conformal: {'marginal_coverage': 0.915041782729805, 'mean_set_size': 0.9185236768802229, 'singleton_rate': 0.9185236768802229, 'empty_rate': 0.08147632311977716, 'n_empty': 117, 'n_multi': 0, 'Normal_coverage': 0.9198813056379822, 'Pneumonia_coverage': 0.9125560538116592, 'Tuberculosis_coverage': 0.9142419601837672}
+Triage: {'coverage': 0.7541782729805014, 'accepted_n': 1083, 'referred_n': 353, 'accepted_errors': 0, 'accepted_accuracy': 1.0, 'selective_risk': 0.0, 'accepted_accuracy_exact_lower95': 0.9965996268602481}
+Metadata shortcut: {'accuracy': 0.9825905292479109, 'balanced_accuracy': np.float64(0.9862907084011473), 'macro_f1': 0.981129234643705}
+
+Paired differences (macro-F1):
+                       comparison   metric  point_difference  bootstrap_mean_difference   ci_low  ci_high  fraction_positive
+        hierarchical_minus_direct macro_f1          -0.00040                   -0.00031 -0.00524  0.00470             0.4440
+        direct_minus_metadata_all macro_f1           0.00479                    0.00467 -0.00479  0.01444             0.8340
+  hierarchical_minus_metadata_all macro_f1           0.00440                    0.00435 -0.00496  0.01408             0.8195
+ metadata_all_minus_metadata_dims macro_f1           0.00167                    0.00173 -0.00166  0.00506             0.7800
+metadata_all_minus_metadata_stats macro_f1           0.40466                    0.40499  0.38016  0.43038             1.0000
+
+Robustness (seed x encoder, macro-F1 mean/sd):
+                  direct_macro_f1         metadata_all_macro_f1         accepted_errors
+                             mean     std                  mean     std             max
+encoder                                                                                
+MobileNetV3-Small          0.9828  0.0050                 0.983  0.0045               2
+ResNet-50                  0.9815  0.0056                 0.983  0.0045               2
+
+Evidence gate summary:
+    dataset                   image        control  n  triggered  interval_condition  ratio_condition  ratio_min  ratio_max  diff_low_min  diff_low_max
+Compilation                  direct   metadata_all 14         14                  14               14     0.9921     1.0158       -0.0255       -0.0006
+Compilation                  direct  metadata_dims 14         14                  13               14     0.9912     1.0141       -0.0242        0.0002
+Compilation                  direct metadata_stats  1          0                   0                0     0.5847     0.5847        0.3831        0.3831
+Compilation            hierarchical   metadata_all 14         14                  14               14     0.9909     1.0156       -0.0332       -0.0004
+Compilation            hierarchical  metadata_dims 14         14                  13               14     0.9900     1.0183       -0.0310        0.0008
+Compilation            hierarchical metadata_stats  1          0                   0                0     0.5849     0.5849        0.3830        0.3830
+   Shenzhen image_MobileNetV3-Small   metadata_all  1          0                   0                0     0.9451     0.9451        0.0122        0.0122
+   Shenzhen image_MobileNetV3-Small  metadata_dims  1          0                   0                0     0.8006     0.8006        0.1269        0.1269
+   Shenzhen image_MobileNetV3-Small metadata_stats  1          0                   0                0     0.9360     0.9360        0.0198        0.0198
+   Shenzhen         image_ResNet-50   metadata_all  1          1                   1                1     0.9754     0.9754       -0.0155       -0.0155
+   Shenzhen         image_ResNet-50  metadata_dims  1          0                   0                0     0.8263     0.8263        0.1027        0.1027
+   Shenzhen         image_ResNet-50 metadata_stats  1          1                   1                1     0.9660     0.9660       -0.0077       -0.0077
+
+Shenzhen:
+                  model  macro_f1_mean  macro_f1_sd  auc_mean  auc_sd  pooled_macro_f1  pooled_macro_f1_ci_low  pooled_macro_f1_ci_high  pooled_auc
+           metadata_all         0.7901       0.0000    0.8469  0.0029           0.7963                  0.7642                   0.8265      0.8473
+          metadata_dims         0.6741       0.0007    0.7037  0.0035           0.6746                  0.6359                   0.7093      0.7049
+         metadata_stats         0.7922       0.0032    0.8400  0.0017           0.7886                  0.7565                   0.8206      0.8402
+image_MobileNetV3-Small         0.8358       0.0009    0.9078  0.0062           0.8425                  0.8139                   0.8703      0.9136
+        image_ResNet-50         0.8086       0.0086    0.8767  0.0040           0.8164                  0.7848                   0.8448      0.8828
+
+GUARDRAILS:
+- Internal reconstructed test set; not external validation.
+- Patient and acquisition-source independence are unverified.
+- High dimensions-only performance indicates confounding of labels with acquisition/export characteristics; source institutions are unknown.
+- Bootstrap intervals are conditional on the trained models.
+- The Shenzhen analysis is a two-class behavioural check of the gate, not an external validation of the three-class model.

@@ -1,0 +1,13 @@
+{
+  "retained_images": 648,
+  "components": 630,
+  "multi_image_components": 12,
+  "images_in_multi_image_components": 30,
+  "largest_component": 7,
+  "size_distribution": {
+    "1": 618,
+    "2": 10,
+    "3": 1,
+    "7": 1
+  }
+}
