@@ -1,0 +1,34 @@
+radius,kind,hamming,path_a,path_b,component_size,pairwise_hamming_shown,paths
+2,direct_pair,0.0,train/tuberculosis/tuberculosis-3165.jpg,train/tuberculosis/tuberculosis-2173.jpg,,,
+2,direct_pair,0.0,train/tuberculosis/tuberculosis-8755.jpg,train/tuberculosis/tuberculosis-5043.jpg,,,
+2,direct_pair,0.0,train/tuberculosis/tuberculosis-3412.jpg,train/tuberculosis/tuberculosis-8653.jpg,,,
+2,direct_pair,0.0,val/tuberculosis/tuberculosis-10414.jpg,train/tuberculosis/tuberculosis-5266.jpg,,,
+2,direct_pair,0.0,val/tuberculosis/tuberculosis-9595.jpg,train/tuberculosis/tuberculosis-9180.jpg,,,
+2,direct_pair,0.0,train/tuberculosis/tuberculosis-7431.jpg,train/tuberculosis/tuberculosis-4322.jpg,,,
+2,cross_label_component,,,,2.0,[2],train/normal/normal-6619.jpg|train/tuberculosis/tuberculosis-6775.jpg
+2,cross_label_component,,,,2.0,[2],train/normal/normal-7095.jpg|train/tuberculosis/tuberculosis-5884.jpg
+2,cross_label_component,,,,2.0,[2],test/tuberculosis/tuberculosis-48.jpg|train/normal/normal-1354.jpg
+4,direct_pair,4.0,train/normal/normal-6097.jpg,train/normal/normal-7792.jpg,,,
+4,direct_pair,4.0,val/tuberculosis/tuberculosis-9748.jpg,val/normal/normal-8337.jpg,,,
+4,direct_pair,4.0,test/normal/normal-320.jpg,test/normal/normal-673.jpg,,,
+4,direct_pair,4.0,train/normal/normal-3891.jpg,test/normal/normal-33.jpg,,,
+4,direct_pair,4.0,train/tuberculosis/tuberculosis-6516.jpg,train/tuberculosis/tuberculosis-7551.jpg,,,
+4,direct_pair,4.0,train/tuberculosis/tuberculosis-6367.jpg,test/tuberculosis/tuberculosis-689.jpg,,,
+4,cross_label_component,,,,12.0,"[4, 10, 8]",train/tuberculosis/tuberculosis-6899.jpg|train/tuberculosis/tuberculosis-6050.jpg|train/tuberculosis/tuberculosis-8634.jpg
+4,cross_label_component,,,,6.0,"[6, 4, 4]",train/normal/normal-5619.jpg|train/normal/normal-6097.jpg|test/normal/normal-896.jpg
+4,cross_label_component,,,,6.0,"[8, 0, 8]",train/tuberculosis/tuberculosis-6096.jpg|test/normal/normal-579.jpg|train/tuberculosis/tuberculosis-4752.jpg
+4,cross_label_component,,,,4.0,"[4, 4, 4]",train/normal/normal-7905.jpg|train/normal/normal-2609.jpg|train/tuberculosis/tuberculosis-2232.jpg
+4,cross_label_component,,,,4.0,"[4, 6, 4]",test/tuberculosis/tuberculosis-866.jpg|train/tuberculosis/tuberculosis-1765.jpg|train/normal/normal-6546.jpg
+4,cross_label_component,,,,4.0,"[4, 6, 4]",train/tuberculosis/tuberculosis-2024.jpg|train/normal/normal-6157.jpg|train/tuberculosis/tuberculosis-5764.jpg
+8,direct_pair,8.0,train/tuberculosis/tuberculosis-7123.jpg,train/tuberculosis/tuberculosis-2954.jpg,,,
+8,direct_pair,6.0,val/normal/normal-9073.jpg,train/normal/normal-3274.jpg,,,
+8,direct_pair,8.0,train/pneumonia/pneumonia-3602.jpg,train/pneumonia/pneumonia-5123.jpg,,,
+8,direct_pair,8.0,val/pneumonia/pneumonia-5784.jpg,train/pneumonia/pneumonia-2866.jpg,,,
+8,direct_pair,8.0,test/normal/normal-160.jpg,val/normal/normal-8989.jpg,,,
+8,direct_pair,8.0,val/tuberculosis/tuberculosis-9895.jpg,train/tuberculosis/tuberculosis-2409.jpg,,,
+8,cross_label_component,,,,6131.0,"[14, 26, 28]",train/tuberculosis/tuberculosis-9447.jpg|train/tuberculosis/tuberculosis-4817.jpg|train/pneumonia/pneumonia-4737.jpg
+8,cross_label_component,,,,4.0,"[8, 10, 16]",test/pneumonia/pneumonia-281.jpg|train/tuberculosis/tuberculosis-2868.jpg|train/pneumonia/pneumonia-2912.jpg
+8,cross_label_component,,,,4.0,"[0, 8, 8]",train/tuberculosis/tuberculosis-6728.jpg|val/tuberculosis/tuberculosis-10029.jpg|val/pneumonia/pneumonia-5298.jpg
+8,cross_label_component,,,,3.0,"[6, 6, 0]",train/normal/normal-3531.jpg|train/tuberculosis/tuberculosis-4756.jpg|val/tuberculosis/tuberculosis-10344.jpg
+8,cross_label_component,,,,3.0,"[0, 8, 8]",test/tuberculosis/tuberculosis-339.jpg|test/tuberculosis/tuberculosis-283.jpg|test/pneumonia/pneumonia-12.jpg
+8,cross_label_component,,,,3.0,"[0, 8, 8]",train/tuberculosis/tuberculosis-1630.jpg|train/tuberculosis/tuberculosis-3488.jpg|train/normal/normal-7442.jpg

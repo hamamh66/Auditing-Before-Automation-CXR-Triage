@@ -1,0 +1,5 @@
+stage,n,n_resolution_strata,cramers_v_class_resolution,metadata_all_cv_macro_f1
+before_exclusion (all readable files),25553,4999,0.7971691219813872,0.7649894707080004
+unique_representatives (after exact-conflict exclusion),14374,3468,0.9867398156124118,0.9819009178823362
+retained_cohort (after near-conflict exclusion),14281,3468,0.9866104221702563,0.9820422747087015
+excluded_files_only,11269,1573,0.503600585026408,0.45482534349260445

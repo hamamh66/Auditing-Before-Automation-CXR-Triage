@@ -1,0 +1,6 @@
+exclusion_type,class_name,n_files
+exact_label_conflict,Normal,5588
+exact_label_conflict,Pneumonia,1579
+exact_label_conflict,Tuberculosis,4009
+near_duplicate_label_conflict,Normal,38
+near_duplicate_label_conflict,Tuberculosis,55
