@@ -36,7 +36,7 @@ Every long-running step prints its progress. Small result files (tables, figures
 
 ## Principal findings
 
-All values come from a deterministic CPU execution of the notebook; each is traceable to a table under `Results/Tables/`. The complete results archive (all figures, per-image audit tables, split assignments, bootstrap samples, test predictions, thresholds, and serialized models) is attached to the latest release.
+All values come from a deterministic CPU execution of the notebook; each is traceable to a table under `Results/Tables/`. The complete results archive (all figures, per-image audit tables, split assignments, bootstrap samples, test predictions, thresholds, and serialized models) is provided at the repository root as `Auditing_Before_Automation_CXR_Triage_results.zip`.
 
 | Finding | Result |
 |---|---:|
@@ -73,7 +73,7 @@ The dimensions alone reproduce the image-model performance on the compilation, a
 └── README.md
 ```
 
-Large per-image tables (image audit, split assignments, excluded conflicts, bootstrap samples, and test predictions), all figures, and the serialized models are in the results archive attached to the latest release.
+Large per-image tables (image audit, split assignments, excluded conflicts, bootstrap samples, and test predictions), all figures, and the serialized models are in the results archive provided at the repository root as `Auditing_Before_Automation_CXR_Triage_results.zip`.
 
 When run, the notebook writes:
 
