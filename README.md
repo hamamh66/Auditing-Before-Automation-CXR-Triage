@@ -36,7 +36,7 @@ Every long-running step prints its progress. Small result files (tables, figures
 
 ## Principal findings
 
-All values come from one deterministic execution of the notebook; each is traceable to a table under `results/tables/`. The complete results archive (all figures, per-image audit tables, split assignments, bootstrap samples, test predictions, thresholds, and serialized models) is attached to the latest release.
+All values come from a deterministic CPU execution of the notebook; each is traceable to a table under `Results/Tables/`. The complete results archive (all figures, per-image audit tables, split assignments, bootstrap samples, test predictions, thresholds, and serialized models) is attached to the latest release.
 
 | Finding | Result |
 |---|---:|
@@ -64,8 +64,8 @@ The dimensions alone reproduce the image-model performance on the compilation, a
 .
 ├── Auditing_Before_Automation_CXR_Triage.ipynb   # complete workflow
 ├── requirements.txt                              # dependencies for a local environment
-├── results/
-│   ├── tables/                                   # CSV tables of the reported run
+├── Results/
+│   ├── Tables/                                   # CSV tables of the reported run
 │   ├── run_manifest.json                         # library versions, device, full configuration
 │   ├── integrity_audit.json, shenzhen_*.json, temperatures.json, test_component_summary.json
 │   └── outputs_summary.txt                       # run summary
